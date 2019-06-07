@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DX12">
+      <UniqueIdentifier>{0080bb21-f9be-45d9-9e5b-7050a993e4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{a25c4445-df74-423f-b6a6-0917cd393d7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX12\API">
+      <UniqueIdentifier>{294d66e9-73dd-459e-94af-1532720d6520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX12\FrostRender">
+      <UniqueIdentifier>{a3dd96a3-e6d6-41e3-a021-890b9b8274bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\FrostSystem">
+      <UniqueIdentifier>{6a0bf49e-3097-4fd7-9528-076dd9dfba98}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\RenderDll\DX12\Interface\FrostRender.cpp">
+      <Filter>DX12\FrostRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\Interface\FrostRenderDXGI.cpp">
+      <Filter>DX12\FrostRender</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\System\CLog.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\System\System.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\System\SystemThreading.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\pch.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12AsynCommandQueue.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12Base.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12CommandList.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12CommandListFence.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12CommandScheduler.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12DescriptorHeap.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12Device.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12GIAdapter.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12GIFactory.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12Heap.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12PSO.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12Resource.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12RootSignature.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12SamplerState.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12SwapChain.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12View.cpp">
+      <Filter>DX12\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderDll\Common\Thread\FrostThread_win32.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\RenderDll\DX12\Interface\FrostRender.h">
+      <Filter>DX12\FrostRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\Interface\FrostRenderDXGI.h">
+      <Filter>DX12\FrostRender</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\System\CLog.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\System\System.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\System\SystemThreading.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\pch.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12AsynCommandQueue.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12Base.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12CommandList.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12CommandListFence.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12CommandScheduler.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12DescriptorHeap.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12Device.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12GIAdapter.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12GIFactory.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12Heap.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12PSO.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12Resource.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12RootSignature.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12SamplerState.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12SwapChain.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12View.h">
+      <Filter>DX12\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\Common\Interface\ILog.h">
+      <Filter>System\FrostSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\Common\Interface\ISystem.h">
+      <Filter>System\FrostSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\Common\Interface\IThread.h">
+      <Filter>System\FrostSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderDll\Common\Thread\FrostThread_win32.h">
+      <Filter>System</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

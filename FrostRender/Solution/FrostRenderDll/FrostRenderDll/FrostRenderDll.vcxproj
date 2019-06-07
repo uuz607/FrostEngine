@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7F5D36CA-6CF2-4A8B-91A1-8BB4D2FD4CF1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FrostRenderDll</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;FROSTRENDERDLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;FROSTRENDERDLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Backup\桌面\Memroy\毕业设计\FrostRender\RenderDll\Common\Interface;D:\Backup\桌面\Memroy\毕业设计\FrostRender\RenderDll\Common\3rdParty;D:\Backup\桌面\Memroy\毕业设计\FrostRender\RenderDll;D:\Backup\桌面\Memroy\毕业设计\FrostRender\RenderDll\DX12\Interface;D:\Backup\桌面\Memroy\毕业设计\FrostRender\RenderDll\DX12\API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>d3d12.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;FROSTRENDERDLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;FROSTRENDERDLL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\FrostGameEngine\FrostGameEngine\FrostRender\RenderDll;E:\FrostGameEngine\FrostGameEngine\FrostRender\RenderDll\Common\3rdParty;E:\FrostGameEngine\FrostGameEngine\FrostRender\RenderDll\Common\Interface;E:\FrostGameEngine\FrostGameEngine\FrostRender\RenderDll\DX12\API;E:\FrostGameEngine\FrostGameEngine\FrostRender\RenderDll\DX12\Interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>d3d12.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\RenderDll\Common\Thread\FrostThread_win32.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12AsynCommandQueue.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12Base.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12CommandList.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12CommandListFence.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12CommandScheduler.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12DescriptorHeap.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12Device.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12GIAdapter.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12GIFactory.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12Heap.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12PSO.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12Resource.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12RootSignature.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12SamplerState.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12SwapChain.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\API\DX12View.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\Interface\FrostRender.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\DX12\Interface\FrostRenderDXGI.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\pch.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\System\CLog.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\System\System.cpp" />
+    <ClCompile Include="..\..\..\RenderDll\System\SystemThreading.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\RenderDll\Common\Interface\ILog.h" />
+    <ClInclude Include="..\..\..\RenderDll\Common\Interface\ISystem.h" />
+    <ClInclude Include="..\..\..\RenderDll\Common\Interface\IThread.h" />
+    <ClInclude Include="..\..\..\RenderDll\Common\Thread\FrostThread_win32.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12AsynCommandQueue.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12Base.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12CommandList.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12CommandListFence.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12CommandScheduler.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12DescriptorHeap.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12Device.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12GIAdapter.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12GIFactory.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12Heap.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12PSO.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12Resource.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12RootSignature.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12SamplerState.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12SwapChain.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\API\DX12View.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\Interface\FrostRender.h" />
+    <ClInclude Include="..\..\..\RenderDll\DX12\Interface\FrostRenderDXGI.h" />
+    <ClInclude Include="..\..\..\RenderDll\pch.h" />
+    <ClInclude Include="..\..\..\RenderDll\System\CLog.h" />
+    <ClInclude Include="..\..\..\RenderDll\System\System.h" />
+    <ClInclude Include="..\..\..\RenderDll\System\SystemThreading.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
